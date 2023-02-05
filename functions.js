@@ -1,9 +1,16 @@
-let a = 10
 
-const b = (a) =>{
-    a = a+1;
-    return a;
+
+//Function statement
+
+function a(){
+    console.log("This is function a (function statement)");
 }
 
- a= b(a)
-console.log(a)
+
+//Function Expression
+
+const b = function (){
+    console.log("this is function b a (function expression)")
+}
+
+
