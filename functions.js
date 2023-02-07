@@ -53,3 +53,42 @@ e(function(){
 
 e(f)
 
+
+//function with many paramenter 
+
+function sumOfNumbers(){
+    let sum = 0
+    for(let i = 0 ;i < arguments.length;i++)
+    sum+=arguments[i]
+
+    return sum
+}
+
+console.log(sumOfNumbers(1,2,3,4,5,6,7,8,9));
+
+
+//Self invoking functions
+(function(){
+    console.log('hello')
+})()
+
+// or 
+(a = function(x=3){
+    console.log('function a value of x is ',x)
+})()
+
+a(4)
+
+
+//Function with default parameters
+
+function a(num = 5){
+    console.log(num)
+}
+
+a() // displays 5
+ 
+
+
+
+ 
